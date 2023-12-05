@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A716759B2B1FBBA60067399D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A716759A2B1FBBA60067399D /* UserModel.swift */; };
+		A716759E2B1FBBB90067399D /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A716759D2B1FBBB90067399D /* Webservice.swift */; };
+		A71675A12B1FC0410067399D /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71675A02B1FC0410067399D /* UserViewModel.swift */; };
+		A71675A32B1FC0D70067399D /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71675A22B1FC0D70067399D /* UserListViewModel.swift */; };
+		A71675A62B1FC2010067399D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71675A52B1FC2010067399D /* Constants.swift */; };
 		A771BD332B1F876C00356C23 /* INSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A771BD322B1F876C00356C23 /* INSApp.swift */; };
 		A771BD352B1F876C00356C23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A771BD342B1F876C00356C23 /* ContentView.swift */; };
 		A771BD372B1F876D00356C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A771BD362B1F876D00356C23 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A716759A2B1FBBA60067399D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		A716759D2B1FBBB90067399D /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		A71675A02B1FC0410067399D /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		A71675A22B1FC0D70067399D /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		A71675A52B1FC2010067399D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A771BD2F2B1F876C00356C23 /* INS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A771BD322B1F876C00356C23 /* INSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSApp.swift; sourceTree = "<group>"; };
 		A771BD342B1F876C00356C23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +42,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A71675992B1FBB900067399D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A716759A2B1FBBA60067399D /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A716759C2B1FBBAA0067399D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A716759D2B1FBBB90067399D /* Webservice.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A716759F2B1FBBC00067399D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A71675A02B1FC0410067399D /* UserViewModel.swift */,
+				A71675A22B1FC0D70067399D /* UserListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A71675A42B1FC1F10067399D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A71675A52B1FC2010067399D /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A71675A72B1FC37E0067399D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A771BD322B1F876C00356C23 /* INSApp.swift */,
+				A771BD342B1F876C00356C23 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A771BD262B1F876C00356C23 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +103,11 @@
 		A771BD312B1F876C00356C23 /* INS */ = {
 			isa = PBXGroup;
 			children = (
-				A771BD322B1F876C00356C23 /* INSApp.swift */,
-				A771BD342B1F876C00356C23 /* ContentView.swift */,
+				A71675A72B1FC37E0067399D /* View */,
+				A71675A42B1FC1F10067399D /* Constants */,
+				A716759F2B1FBBC00067399D /* ViewModel */,
+				A716759C2B1FBBAA0067399D /* Service */,
+				A71675992B1FBB900067399D /* Model */,
 				A771BD362B1F876D00356C23 /* Assets.xcassets */,
 				A771BD382B1F876D00356C23 /* Preview Content */,
 			);
@@ -138,6 +193,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A771BD352B1F876C00356C23 /* ContentView.swift in Sources */,
+				A71675A32B1FC0D70067399D /* UserListViewModel.swift in Sources */,
+				A716759B2B1FBBA60067399D /* UserModel.swift in Sources */,
+				A716759E2B1FBBB90067399D /* Webservice.swift in Sources */,
+				A71675A62B1FC2010067399D /* Constants.swift in Sources */,
+				A71675A12B1FC0410067399D /* UserViewModel.swift in Sources */,
 				A771BD332B1F876C00356C23 /* INSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
