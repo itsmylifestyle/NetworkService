@@ -12,8 +12,11 @@ struct ContentView: View {
     @ObservedObject var userListViewModel : UserListViewModel
     
     init() {
-        self.userListViewModel = UserListViewModel()
+        self.userListViewModel = UserListViewModel(service: LocalService())
     }
+    //First case: Webservice()
+    //Second case: LocalService()
+    
     
     var body: some View {
         List(userListViewModel.userList, id: \.id) { user in

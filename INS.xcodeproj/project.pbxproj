@@ -12,6 +12,9 @@
 		A71675A12B1FC0410067399D /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71675A02B1FC0410067399D /* UserViewModel.swift */; };
 		A71675A32B1FC0D70067399D /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71675A22B1FC0D70067399D /* UserListViewModel.swift */; };
 		A71675A62B1FC2010067399D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71675A52B1FC2010067399D /* Constants.swift */; };
+		A71675A92B1FC61F0067399D /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = A71675A82B1FC61F0067399D /* users.json */; };
+		A71675AB2B1FC6430067399D /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71675AA2B1FC6430067399D /* LocalService.swift */; };
+		A71675AD2B1FCBD10067399D /* NerworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71675AC2B1FCBD10067399D /* NerworkService.swift */; };
 		A771BD332B1F876C00356C23 /* INSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A771BD322B1F876C00356C23 /* INSApp.swift */; };
 		A771BD352B1F876C00356C23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A771BD342B1F876C00356C23 /* ContentView.swift */; };
 		A771BD372B1F876D00356C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A771BD362B1F876D00356C23 /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 		A71675A02B1FC0410067399D /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		A71675A22B1FC0D70067399D /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		A71675A52B1FC2010067399D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A71675A82B1FC61F0067399D /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		A71675AA2B1FC6430067399D /* LocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
+		A71675AC2B1FCBD10067399D /* NerworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NerworkService.swift; sourceTree = "<group>"; };
 		A771BD2F2B1F876C00356C23 /* INS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A771BD322B1F876C00356C23 /* INSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSApp.swift; sourceTree = "<group>"; };
 		A771BD342B1F876C00356C23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				A716759D2B1FBBB90067399D /* Webservice.swift */,
+				A71675AA2B1FC6430067399D /* LocalService.swift */,
+				A71675AC2B1FCBD10067399D /* NerworkService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -108,6 +116,7 @@
 				A716759F2B1FBBC00067399D /* ViewModel */,
 				A716759C2B1FBBAA0067399D /* Service */,
 				A71675992B1FBB900067399D /* Model */,
+				A71675A82B1FC61F0067399D /* users.json */,
 				A771BD362B1F876D00356C23 /* Assets.xcassets */,
 				A771BD382B1F876D00356C23 /* Preview Content */,
 			);
@@ -180,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A71675A92B1FC61F0067399D /* users.json in Resources */,
 				A771BD3A2B1F876D00356C23 /* Preview Assets.xcassets in Resources */,
 				A771BD372B1F876D00356C23 /* Assets.xcassets in Resources */,
 			);
@@ -193,6 +203,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A771BD352B1F876C00356C23 /* ContentView.swift in Sources */,
+				A71675AB2B1FC6430067399D /* LocalService.swift in Sources */,
+				A71675AD2B1FCBD10067399D /* NerworkService.swift in Sources */,
 				A71675A32B1FC0D70067399D /* UserListViewModel.swift in Sources */,
 				A716759B2B1FBBA60067399D /* UserModel.swift in Sources */,
 				A716759E2B1FBBB90067399D /* Webservice.swift in Sources */,

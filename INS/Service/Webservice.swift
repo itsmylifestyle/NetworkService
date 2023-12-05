@@ -12,7 +12,10 @@ enum NetworkError : Error {
     case invalidServerResponse
 }
 
-class Webservice {
+class Webservice : NetworkService {
+    
+    var type : String = "Webservice"
+    
     func download(_ resource : String) async throws -> [User] {
         guard let url = URL(string: resource) else {
             throw NetworkError.invalidURL

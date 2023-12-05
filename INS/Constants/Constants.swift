@@ -14,4 +14,8 @@ struct Constants {
         static let userExtension2 = "\(baseUrl)/posts"
         static let userExtension3 = "\(baseUrl)/news"
     }
+    
+    struct Paths {
+        static var baseUrl = "users"
+    }
 }
